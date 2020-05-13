@@ -1,0 +1,36 @@
+body {
+    background-image: url('/img/freeBlue.jpg');
+    background-size: auto 150vh;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.menu {
+    background-color: aliceblue;
+}
+
+.menu li {
+    list-style: none; /* Tira o estilo da lista */
+}  
+
+.menu ul {
+    display: flex; /* Coloca como coluna */
+    justify-content: space-around; /* Justifica Adicionando espaço entre as colunas inteiras*/
+}
+
+a {
+    color: teal;
+    text-decoration: none; /* Tira sublinhado */
+}
+
+a:hover {
+    text-decoration: underline; /* Mostra sublinhado quando passar o mouse sobre */
+}
+
+.site-subtitle, .site-title {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.site-subtitle {
+    font-style: italic;
+}
