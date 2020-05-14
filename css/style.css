@@ -42,7 +42,7 @@ header {
 }
 
 .menu {
-    background-color: aliceblue;
+    background-color: #000000;
     position: fixed; /* Não é atingido pelo flex, fica por cima do resto do conteúdo */
     top: 0; /* Só funciona com position declarado */
     width: 100vw;
@@ -60,6 +60,10 @@ header {
 .menu a {
     display: block;
     padding: 10px 50px;    
+}
+.menu a:hover {
+    background-color: #fff;
+    filter: blur(0.1px);
 }
 
 a {
