@@ -1,11 +1,51 @@
+/* reset do css */
+* {
+    margin: 0; /* Margem por fora do elemento */
+    padding: 0; /* Margem dentro do elemento */
+    box-sizing: border-box;
+}
+
 body {
     background-image: url('../img/freeBlue.jpg');
     background-size: auto 150vh;
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+}
+
+/* Se a tela tiver pelo menos 400px carregará os seguintes estilos */
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+/* breakpoints */
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+/* breakpoints */
+@media (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
     background-color: aliceblue;
+    position: fixed; /* Não é atingido pelo flex, fica por cima do resto do conteúdo */
+    top: 0; /* Só funciona com position declarado */
+    width: 100vw;
 }
 
 .menu li {
@@ -15,6 +55,11 @@ body {
 .menu ul {
     display: flex; /* Coloca como coluna */
     justify-content: space-around; /* Justifica Adicionando espaço entre as colunas inteiras*/
+}
+
+.menu a {
+    display: block;
+    padding: 10px 50px;    
 }
 
 a {
@@ -31,6 +76,15 @@ a:hover {
     text-align: center;
 }
 
+.site-title {
+    font-size: 4em;
+}
+
 .site-subtitle {
     font-style: italic;
+}
+
+.img-portifolio {
+    width: 180px;
+    height: 180px;
 }
