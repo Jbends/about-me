@@ -6,22 +6,23 @@
     <title>AboutMe</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Sacramento&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/006c89974a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portifolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="titulo">
             <h1 class="site-title">Hugo X. Rodrigues</h1>
             <h2 class="site-subtitle">Desenvolvedor Java Júnior</h2>
         </div>
     </header>
-    <section class="portifolio">
+    <section class="portifolio" id="portifolio">
         <h2>Portifólio</h2>
 
         <div class="grid">
@@ -44,5 +45,25 @@
         </div>
         
     </section>
+    <footer>
+        <section id="contato" class="contato">
+            <h2>Contato</h2>
+
+            <div class="grid icons">
+                <a target="_blank" href="http://">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a target="_blank" href="http://">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a target="_blank" href="http://">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="http://">
+                    <i class="fas fa-envelope-square"></i>  
+                </a>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
